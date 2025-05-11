@@ -53,19 +53,19 @@ The goal is to develop a model that efficiently captures both spatial and tempor
 MFCC spectrograms of shape (Batch, 1, Time, Frequency)
 
 ### 🔹 CNN Layers:
-python
+```python
 Conv2d(1 → 32, kernel_size=(11, 41), stride=(2, 2), padding=(5, 20))
 → BatchNorm2d → ReLU
 
 Conv2d(32 → 32, kernel_size=(11, 21), stride=(1, 2), padding=(5, 10))
 → BatchNorm2d → ReLU
-
+```
 ### 🔹 BiGRU Layers:
 
-python
+```python
 BiGRU(input_size=Frequency, hidden_size=128, num_layers=2, bidirectional=True)
 → Dropout → Fully Connected → Softmax
-
+```
 
 
 
@@ -97,17 +97,17 @@ BiGRU(input_size=Frequency, hidden_size=128, num_layers=2, bidirectional=True)
 * Scikit-learn
 * Matplotlib / Seaborn
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 
 
 ## 🚀 Run the Project
 
-bash
+```bash
 python main.py
-
+```
 
 
 
