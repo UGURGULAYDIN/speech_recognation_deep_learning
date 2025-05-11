@@ -23,7 +23,7 @@ The goal is to develop a model that efficiently captures both spatial and tempor
 ## 📚 Literature Summary
 
 - *CNNs* are effective at capturing local patterns in audio signals.
-- *GRU, especially **Bidirectional GRU (BiGRU)*, models forward and backward dependencies in time-series data.
+- GRU, especially *Bidirectional GRU (BiGRU)*, models forward and backward dependencies in time-series data.
 - Combining CNNs and RNNs has shown strong performance in speech recognition tasks.
 
 
